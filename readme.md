@@ -8,7 +8,7 @@
 
 ## Install
 
-[Download the binary](https://github.com/sindresorhus/dark-mode/releases/latest) and put it in `/usr/local/bin` or [install with npm](https://github.com/sindresorhus/dark-mode#cli).
+[Download the binary](https://github.com/sindresorhus/dark-mode/releases/latest) and put it in `/usr/local/bin` or [install with npm](https://github.com/sindresorhus/node-dark-mode#cli).
 
 
 ## Usage
