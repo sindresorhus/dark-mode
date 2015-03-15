@@ -8,7 +8,21 @@
 
 ## Install
 
-[Download the binary](https://github.com/sindresorhus/dark-mode/releases/latest) and put it in `/usr/local/bin` or [install with npm](https://github.com/sindresorhus/node-dark-mode#cli).
+### [Homebrew](http://brew.sh)
+
+```
+$ brew install dark-mode
+```
+
+### [npm](https://github.com/sindresorhus/node-dark-mode#cli)
+
+```
+$ npm install --global dark-mode
+```
+
+### Manually
+
+[Download the binary](https://github.com/sindresorhus/dark-mode/releases/latest) and put it in `/usr/local/bin`.
 
 
 ## Usage
@@ -25,6 +39,11 @@ dark-mode --mode Light
 dark-mode --mode
 > Light
 ```
+
+
+## Related
+
+- [`node-dark-mode`](https://github.com/sindresorhus/node-dark-mode) - Node wrapper for `dark-mode`.
 
 
 ## License
