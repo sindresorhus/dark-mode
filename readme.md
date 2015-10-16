@@ -1,6 +1,8 @@
 # dark-mode
 
-> Toggle the [Dark Mode](http://www.macworld.co.uk/how-to/mac-software/turn-on-yosemites-dark-mode-on-mac-3534690/) in OS X 10.10 from the command-line
+> Toggle the OS X [Dark Mode](http://www.macworld.co.uk/how-to/mac-software/turn-on-yosemites-dark-mode-on-mac-3534690/) from the command-line
+
+Requires OS X 10.10 or later.
 
 
 ![](screenshot.gif)
@@ -22,7 +24,7 @@ $ npm install --global dark-mode
 
 ### Manually
 
-[Download the binary](https://github.com/sindresorhus/dark-mode/releases/latest) and put it in `/usr/local/bin`.
+[Download](https://github.com/sindresorhus/dark-mode/releases/latest) the binary and put it in `/usr/local/bin`.
 
 
 ## Usage
@@ -41,9 +43,16 @@ dark-mode --mode
 ```
 
 
+## Build
+
+```
+$ ./build
+```
+
+
 ## Related
 
-- [`node-dark-mode`](https://github.com/sindresorhus/node-dark-mode) - Node wrapper for `dark-mode`.
+- [node-dark-mode](https://github.com/sindresorhus/node-dark-mode) - Node.js wrapper
 
 
 ## License
