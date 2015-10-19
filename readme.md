@@ -4,6 +4,8 @@
 
 Requires OS X 10.10 or later.
 
+**Ensure `System Preferences` → `General` → `Use dark menu bar and Dock` is unchecked.**
+
 
 ![](screenshot.gif)
 
