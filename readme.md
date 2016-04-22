@@ -12,19 +12,19 @@ Requires OS X 10.10 or later.
 
 ## Install
 
-### [Homebrew](http://brew.sh)
+###### [Homebrew](http://brew.sh)
 
 ```
 $ brew install dark-mode
 ```
 
-### [npm](https://github.com/sindresorhus/node-dark-mode#cli)
+###### [npm](https://github.com/sindresorhus/node-dark-mode#cli)
 
 ```
 $ npm install --global dark-mode
 ```
 
-### Manually
+###### Manually
 
 [Download](https://github.com/sindresorhus/dark-mode/releases/latest) the binary and put it in `/usr/local/bin`.
 
