@@ -13,7 +13,7 @@ int main() {
 			}
 
 			if ([args[1] isEqualToString: @"--help"]) {
-				puts("\n  Usage:\n    dark-mode [--mode]\n\n  Options:\n    --mode  Get or set the mode: Dark|Light\n\n  Created by Sindre Sorhus");
+				puts("\n  Usage:\n    dark-mode [--mode]\n\n  Options:\n    --mode  Get or set the mode: Dark|Light|Reset\n\n  Created by Sindre Sorhus");
 				return 0;
 			}
 
@@ -23,11 +23,23 @@ int main() {
 					return 0;
 				}
 
-				newMode = args[2];
+                NSString *noCaps = [args[2] lowercaseString];
+
+                if([noCaps isEqualToString: @"reset"]){
+                    newMode = NULL;
+                }else if([noCaps isEqualToString: @"dark"]){
+                    newMode = @"Dark";
+                }else if([noCaps isEqualToString: @"light"]){
+                    newMode = @"Light";
+                }else{
+                    puts("\n  Usage:\n    dark-mode [--mode]\n\n  Options:\n    --mode  Get or set the mode: Dark|Light|Reset\n\n  Created by Sindre Sorhus");
+                    return 0;
+                }
+
 			}
 		}
 
-		CFPreferencesSetValue((CFStringRef)@"AppleInterfaceStyle", (__bridge CFPropertyListRef)(newMode), kCFPreferencesAnyApplication, kCFPreferencesCurrentUser, kCFPreferencesCurrentHost);
+		CFPreferencesSetValue((CFStringRef)@"AppleInterfaceStyle", newMode, kCFPreferencesAnyApplication, kCFPreferencesCurrentUser, kCFPreferencesCurrentHost);
 
 		CFNotificationCenterPostNotification(CFNotificationCenterGetDistributedCenter(), (CFStringRef)@"AppleInterfaceThemeChangedNotification", NULL, NULL, YES);
 	}
