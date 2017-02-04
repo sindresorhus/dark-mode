@@ -1,13 +1,10 @@
-# dark-mode
+# dark-mode [![Build Status](https://travis-ci.org/sindresorhus/dark-mode.svg?branch=master)](https://travis-ci.org/sindresorhus/dark-mode)
 
-> Toggle the macOS [Dark Mode](http://www.macworld.co.uk/how-to/mac-software/turn-on-yosemites-dark-mode-on-mac-3534690/) from the command-line
+> Control the macOS dark mode from the command-line
 
-Requires macOS 10.10 or later.
+*Requires macOS 10.10 or later.*
 
-**Ensure `System Preferences` → `General` → `Use dark menu bar and Dock` is unchecked.**
-
-
-![](screenshot.gif)
+<img src="screenshot.gif" width="509">
 
 
 ## Install
@@ -18,10 +15,10 @@ Requires macOS 10.10 or later.
 $ brew install dark-mode
 ```
 
-###### [npm](https://github.com/sindresorhus/node-dark-mode#cli)
+###### [npm](https://github.com/sindresorhus/dark-mode-cli)
 
 ```
-$ npm install --global dark-mode
+$ npm install --global dark-mode-cli
 ```
 
 ###### Manually
@@ -31,32 +28,30 @@ $ npm install --global dark-mode
 
 ## Usage
 
-```sh
-# toggle between dark and light mode
-dark-mode
+```
+$ dark-mode --help
 
-# force a specific mode
-dark-mode --mode Dark
-dark-mode --mode Light
+  Usage
+    $ dark-mode [command]
 
-# get the current mode
-dark-mode --mode
-> Light
+  Commands
+    <none>  Toggle dark mode
+    on      Enable dark mode
+    off     Disable dark mode
+    status  Dark mode status
 ```
 
 
 ## Build
 
-```
-$ ./build
-```
+Run `./build` or build in Xcode.
 
 
 ## Related
 
-- [node-dark-mode](https://github.com/sindresorhus/node-dark-mode) - Node.js wrapper
+- [node-dark-mode](https://github.com/sindresorhus/node-dark-mode) - Node.js port
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

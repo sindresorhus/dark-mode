@@ -1,5 +1,3 @@
 #!/usr/bin/env sh
 
-filename=dark-mode
-
-clang $filename.m -fmodules -mmacosx-version-min=10.10 -o $filename
+xcodebuild -derivedDataPath $(mktemp -d) -scheme dark-mode

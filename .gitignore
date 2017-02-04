@@ -1,1 +1,2 @@
-dark-mode
+*.xcodeproj/xcuserdata
+bin/dark-mode
