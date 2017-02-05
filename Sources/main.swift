@@ -18,9 +18,9 @@ func showUsage() {
 	)
 }
 
-let arguments = Array(CommandLine.arguments.dropFirst(1))
+let arguments = CommandLine.arguments.dropFirst(1)
 
-switch arguments.stringAt(0) {
+switch arguments.first {
 case "--help":
 	showUsage()
 case "--version":
