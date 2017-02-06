@@ -18,18 +18,18 @@ func showUsage() {
 	)
 }
 
-let arguments = Array(CommandLine.arguments.dropFirst(1))
+let arguments = CommandLine.arguments.dropFirst(1)
 
-switch arguments.stringAt(0) {
-case "--help":
+switch arguments.first {
+case "--help"?:
 	showUsage()
-case "--version":
+case "--version"?:
 	print(VERSION)
-case "status":
+case "status"?:
 	print(DarkMode.isDark ? "on" : "off")
-case "on":
+case "on"?:
 	DarkMode.enable()
-case "off":
+case "off"?:
 	DarkMode.disable()
 default:
 	DarkMode.toggle()
