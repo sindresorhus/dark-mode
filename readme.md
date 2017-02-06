@@ -50,6 +50,7 @@ Run `./build` or build in Xcode.
 ## Related
 
 - [node-dark-mode](https://github.com/sindresorhus/node-dark-mode) - Node.js port
+- [alfred-dark-mode](https://github.com/sindresorhus/alfred-dark-mode) - Alfred workflow
 
 
 ## License
