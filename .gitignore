@@ -1,2 +1,3 @@
-*.xcodeproj/xcuserdata
+xcuserdata
+project.xcworkspace
 bin/dark-mode

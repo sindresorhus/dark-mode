@@ -2,24 +2,24 @@ import XCTest
 
 final class Tests: XCTestCase {
     func testDarkMode() {
-		let initMode = DarkMode.isDark
+		let initialMode = DarkMode.isEnabled
 
-		DarkMode.enable()
-		XCTAssertTrue(DarkMode.isDark)
+		DarkMode.isEnabled = true
+		XCTAssertTrue(DarkMode.isEnabled)
 
-		DarkMode.disable()
-		XCTAssertFalse(DarkMode.isDark)
+		DarkMode.isEnabled = false
+		XCTAssertFalse(DarkMode.isEnabled)
 
 		DarkMode.toggle()
-		XCTAssertTrue(DarkMode.isDark)
+		XCTAssertTrue(DarkMode.isEnabled)
 
 		DarkMode.toggle(force: false)
-		XCTAssertFalse(DarkMode.isDark)
+		XCTAssertFalse(DarkMode.isEnabled)
 
 		DarkMode.toggle(force: true)
-		XCTAssertTrue(DarkMode.isDark)
+		XCTAssertTrue(DarkMode.isEnabled)
 
-		// Reset to initial mode before testing
-		DarkMode.toggle(force: initMode)
+		// Reset to initial mode before testing.
+		DarkMode.toggle(force: initialMode)
     }
 }

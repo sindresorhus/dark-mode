@@ -2,7 +2,7 @@
 
 > Control the macOS dark mode from the command-line
 
-*Requires macOS 10.10 or later.*
+*Requires macOS 10.10 or later. It also works with macOS 10.14.*
 
 <img src="screenshot.gif" width="509">
 
