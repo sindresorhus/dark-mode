@@ -5,7 +5,7 @@ struct DarkMode {
 
 	static var isEnabled: Bool {
 		get {
-			UserDefaults.standard.string(forKey: "AppleInterfaceStyle") == "Dark"
+			UserDefaults.standard.string(forKey: "AppleInterfaceStyle") ?? "" == "Dark"
 		}
 		set {
 			toggle(force: newValue)
