@@ -146,7 +146,6 @@
 					E3A310651E4503E500D314DD = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
 					};
 					E3BA9E961E45EC00009C5512 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -341,6 +340,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INSTALL_PATH = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +354,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INSTALL_PATH = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";

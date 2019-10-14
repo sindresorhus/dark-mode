@@ -2,7 +2,7 @@
 
 > Control the macOS dark mode from the command-line
 
-*Requires macOS 10.10 or later. It also works with macOS 10.14.*
+Requires macOS 10.10 or later. macOS 10.13 or earlier needs to download the [Swift runtime support libraries](https://download.developer.apple.com/Developer_Tools/Swift_5_Runtime_Support_for_Command_Line_Tools/Swift_5_Runtime_Support_for_Command_Line_Tools.dmg).
 
 <img src="screenshot.gif" width="509">
 
@@ -51,8 +51,3 @@ Run `./build` or build in Xcode.
 
 - [node-dark-mode](https://github.com/sindresorhus/node-dark-mode) - Node.js port
 - [alfred-dark-mode](https://github.com/sindresorhus/alfred-dark-mode) - Alfred workflow
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
