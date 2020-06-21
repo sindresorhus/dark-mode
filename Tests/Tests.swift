@@ -1,7 +1,7 @@
 import XCTest
 
 final class Tests: XCTestCase {
-    func testDarkMode() {
+	func testDarkMode() {
 		let initialMode = DarkMode.isEnabled
 
 		DarkMode.isEnabled = true
@@ -21,5 +21,5 @@ final class Tests: XCTestCase {
 
 		// Reset to initial mode before testing.
 		DarkMode.toggle(force: initialMode)
-    }
+	}
 }
