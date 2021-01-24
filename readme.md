@@ -1,11 +1,10 @@
-# dark-mode [![Build Status](https://travis-ci.org/sindresorhus/dark-mode.svg?branch=master)](https://travis-ci.org/sindresorhus/dark-mode)
+# dark-mode
 
 > Control the macOS dark mode from the command-line
 
 Requires macOS 10.10 or later. macOS 10.13 or earlier needs to download the [Swift runtime support libraries](https://support.apple.com/kb/DL1998).
 
 <img src="screenshot.gif" width="509">
-
 
 ## Install
 
@@ -25,7 +24,6 @@ $ npm install --global dark-mode-cli
 
 [Download](https://github.com/sindresorhus/dark-mode/releases/latest) the binary and put it in `/usr/local/bin`.
 
-
 ## Usage
 
 ```
@@ -41,11 +39,9 @@ $ dark-mode --help
     status  Dark mode status
 ```
 
-
 ## Build
 
 Run `./build` or build in Xcode.
-
 
 ## Related
 
