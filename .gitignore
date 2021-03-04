@@ -1,3 +1,4 @@
 xcuserdata
 project.xcworkspace
 bin/dark-mode
+.build/
