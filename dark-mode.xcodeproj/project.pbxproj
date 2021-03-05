@@ -105,7 +105,6 @@
 				E3A310621E4503E500D314DD /* Sources */,
 				E3A310631E4503E500D314DD /* Frameworks */,
 				E3A310641E4503E500D314DD /* CopyFiles */,
-				E3A310701E45076C00D314DD /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -182,24 +181,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E3A310701E45076C00D314DD /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "mkdir -p \"bin\" && cp \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}\" \"bin/${EXECUTABLE_NAME}\"";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E3A310621E4503E500D314DD /* Sources */ = {
