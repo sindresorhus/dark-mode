@@ -4,4 +4,3 @@ set -x
 
 xcodebuild archive -derivedDataPath $(mktemp -d) -scheme dark-mode OBJROOT=.build SYMROOT=.build
 cp .build/Release/dark-mode bin/dark-mode
-
