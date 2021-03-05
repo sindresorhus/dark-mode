@@ -41,9 +41,9 @@ $ dark-mode --help
 
 ## Build
 
-Run `./build`, binary will be exported to ./bin/dark-mode.
+Run `./build`. The binary can be found at `./bin/dark-mode`.
 
-Building in Xcode works, but does not export binary.
+Building in Xcode works, but it does not export a binary.
 
 ## Related
 
