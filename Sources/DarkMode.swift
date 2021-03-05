@@ -6,7 +6,7 @@ struct DarkMode {
 
 	static var isEnabled: Bool {
 		get {
-			if #available(OSX 10.14, *) {
+			if #available(macOS 10.14, *) {
 				return NSAppearance.current.name == .darkAqua
 			} else {
 				return UserDefaults.standard.string(forKey: "AppleInterfaceStyle") == "Dark"
