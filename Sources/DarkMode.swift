@@ -1,11 +1,16 @@
 import Foundation
+import AppKit
 
 struct DarkMode {
 	private static let prefix = "tell application \"System Events\" to tell appearance preferences to"
 
 	static var isEnabled: Bool {
 		get {
-			UserDefaults.standard.string(forKey: "AppleInterfaceStyle") == "Dark"
+			if #available(macOS 10.14, *) {
+				return NSAppearance.current.bestMatch(from: [.darkAqua, .aqua]) == .darkAqua
+			} else {
+				return UserDefaults.standard.string(forKey: "AppleInterfaceStyle") == "Dark"
+			}
 		}
 		set {
 			toggle(force: newValue)
