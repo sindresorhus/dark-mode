@@ -11,8 +11,8 @@
 		E3BA9E9A1E45EC00009C5512 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA9E991E45EC00009C5512 /* Tests.swift */; };
 		E3BA9EA01E45EDA4009C5512 /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA9E9F1E45EDA4009C5512 /* DarkMode.swift */; };
 		E3BA9EA11E45EF55009C5512 /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA9E9F1E45EDA4009C5512 /* DarkMode.swift */; };
-		E3BA9EA31E45F9EE009C5512 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA9EA21E45F9EE009C5512 /* util.swift */; };
-		E3BA9EA41E45FA33009C5512 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA9EA21E45F9EE009C5512 /* util.swift */; };
+		E3BA9EA31E45F9EE009C5512 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA9EA21E45F9EE009C5512 /* Utilities.swift */; };
+		E3BA9EA41E45FA33009C5512 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA9EA21E45F9EE009C5512 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +34,7 @@
 		E3BA9E991E45EC00009C5512 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Tests.swift; sourceTree = "<group>"; usesTabs = 1; };
 		E3BA9E9B1E45EC00009C5512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3BA9E9F1E45EDA4009C5512 /* DarkMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DarkMode.swift; sourceTree = "<group>"; usesTabs = 1; };
-		E3BA9EA21E45F9EE009C5512 /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = util.swift; sourceTree = "<group>"; usesTabs = 1; };
+		E3BA9EA21E45F9EE009C5512 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Utilities.swift; sourceTree = "<group>"; usesTabs = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			children = (
 				E3A310691E4503E500D314DD /* main.swift */,
 				E3BA9E9F1E45EDA4009C5512 /* DarkMode.swift */,
-				E3BA9EA21E45F9EE009C5512 /* util.swift */,
+				E3BA9EA21E45F9EE009C5512 /* Utilities.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3BA9EA31E45F9EE009C5512 /* util.swift in Sources */,
+				E3BA9EA31E45F9EE009C5512 /* Utilities.swift in Sources */,
 				E3BA9EA01E45EDA4009C5512 /* DarkMode.swift in Sources */,
 				E3A3106A1E4503E500D314DD /* main.swift in Sources */,
 			);
@@ -197,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3BA9EA41E45FA33009C5512 /* util.swift in Sources */,
+				E3BA9EA41E45FA33009C5512 /* Utilities.swift in Sources */,
 				E3BA9EA11E45EF55009C5512 /* DarkMode.swift in Sources */,
 				E3BA9E9A1E45EC00009C5512 /* Tests.swift in Sources */,
 			);
