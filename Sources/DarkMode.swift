@@ -1,7 +1,7 @@
 import AppKit
 
-struct DarkMode {
-	private static let prefix = "tell application \"System Events\" to tell appearance preferences to"
+enum DarkMode {
+	private static let prefix = #"tell application "System Events" to tell appearance preferences to"#
 
 	static var isEnabled: Bool {
 		get {
