@@ -1,4 +1,4 @@
-name: CI
+name: Sasiya 
 on:
   - push
   - pull_request
