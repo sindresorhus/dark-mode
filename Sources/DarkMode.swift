@@ -16,8 +16,12 @@ enum DarkMode {
 		}
 	}
 
-	static func toggle(force: Bool? = nil) {
+	static func appleScriptSource(force: Bool? = nil) -> String {
 		let value = force.map(String.init) ?? "not dark mode"
-		runAppleScript("\(prefix) set dark mode to \(value)")
+		return "\(prefix) set dark mode to \(value)"
+	}
+
+	static func toggle(force: Bool? = nil) {
+		runAppleScript(appleScriptSource(force: force))
 	}
 }

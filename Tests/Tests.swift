@@ -1,25 +1,18 @@
 import XCTest
 
 final class Tests: XCTestCase {
-	func testDarkMode() {
-		let initialMode = DarkMode.isEnabled
-
-		DarkMode.isEnabled = true
-		XCTAssertTrue(DarkMode.isEnabled)
-
-		DarkMode.isEnabled = false
-		XCTAssertFalse(DarkMode.isEnabled)
-
-		DarkMode.toggle()
-		XCTAssertTrue(DarkMode.isEnabled)
-
-		DarkMode.toggle(force: false)
-		XCTAssertFalse(DarkMode.isEnabled)
-
-		DarkMode.toggle(force: true)
-		XCTAssertTrue(DarkMode.isEnabled)
-
-		// Reset to initial mode before testing.
-		DarkMode.toggle(force: initialMode)
+	func testAppleScriptSource() {
+		XCTAssertEqual(
+			DarkMode.appleScriptSource(force: true),
+			#"tell application "System Events" to tell appearance preferences to set dark mode to true"#
+		)
+		XCTAssertEqual(
+			DarkMode.appleScriptSource(force: false),
+			#"tell application "System Events" to tell appearance preferences to set dark mode to false"#
+		)
+		XCTAssertEqual(
+			DarkMode.appleScriptSource(),
+			#"tell application "System Events" to tell appearance preferences to set dark mode to not dark mode"#
+		)
 	}
 }
